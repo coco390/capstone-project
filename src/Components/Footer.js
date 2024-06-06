@@ -1,5 +1,15 @@
 import React from "react";
 import logo from "../Images/Logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faInstagram,
+    faTwitter,
+  } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope,
+         faMap,
+         faPhone, } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return(
@@ -17,16 +27,27 @@ const Footer = () => {
                     </div>
                     <div className="footer-contact">
                         <p className="footer-head">Contact</p>
-                        <a href="/" className="footer-item">Address</a>
-                        <a href="/" className="footer-item">Phone Number</a>
-                        <a href="/" className="footer-item">Email</a>
+                        <a href="/" className="footer-item">
+                        <FontAwesomeIcon icon={faMap}/>Address</a>
+                        <a href="/" className="footer-item">
+                        <FontAwesomeIcon icon={faPhone}/>Phone Number</a>
+                        <a href="/" className="footer-item">
+                        <FontAwesomeIcon icon={faEnvelope}/>Email</a>
                     </div>
-                <div className="footer-social">
-                        <p className="footer-head">Social Media</p>
-                        <a href="/" className="footer-item">Facebook</a>
-                        <a href="/" className="footer-item">Twitter</a>
-                        <a href="/" className="footer-item">Instagram</a>
-                        <a href="/" className="footer-item">YouTube</a>
+                <div className="social-container">
+                        <p className="footer-head">Connect With Us</p>
+                        <a href="https://www.facebook.com" className="facebook social">
+                        <FontAwesomeIcon icon={faFacebook} size="1x" />
+                        </a>
+                        <a href="https://www.x.com" className="twitter social">
+                        <FontAwesomeIcon icon={faTwitter} size="1x" />
+                        </a>
+                        <a href="https://www.instagram.com" className="instagram social">
+                        <FontAwesomeIcon icon={faInstagram} size="1x" />
+                        </a>
+                        <a href="https://www.youtube.com" className="youtube social">
+                        <FontAwesomeIcon icon={faYoutube} size="1x" />
+                        </a>
                  </div>
             </div>
         </footer>

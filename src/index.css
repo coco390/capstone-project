@@ -19,16 +19,6 @@ code {
     box-sizing: border-box;
 }
 
-footer {
-  font-family: 'Karla', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 26px;
-	letter-spacing: 0em;
-	text-align: left;
-	background-color: #EDEFEE;
-}
-
 /*Typography*/
 p {
   margin: 0;
@@ -44,6 +34,14 @@ footer {
 	padding-block: 1em;
 	width: 100vw;
 	height: 10%;
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	background-color: #495E57;
+	color: white;
 }
 
 .footer-content {
@@ -62,3 +60,31 @@ footer {
 	font-weight: 600;
 	margin-bottom: 0.6em;
 }
+
+/*Social Container Styling*/
+  a.social {
+	margin: 0 .3rem;
+	transition: transform 250ms;
+	display: inline-block;
+  }
+
+  a.social:hover {
+	color: #F4CE14;
+	transform: translateY(-2px);
+  }
+
+  a.youtube {
+	color: white;
+  }
+
+  a.facebook {
+	color: white;
+  }
+
+  a.twitter {
+	color: white;
+  }
+
+  a.instagram {
+	color: white;
+  }
