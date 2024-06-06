@@ -4,40 +4,33 @@ import logo from "../Images/Logo.svg";
 const Footer = () => {
     return(
         <footer>
-            <section>
-                <div className="footer-logo">
-                    <img src={logo} alt="Little Lemon Logo" />
-                </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Menu</a></li>
-                        <li><a href="/">Reservations</a></li>
-                        <li><a href="/">Order Online</a></li>
-                        <li><a href="/">Login</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>123 Chicago, IL</li>
-                        <li>800-123-4567</li>
-                        <li>Customer@littlelemon.com</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>CONNECT WITH US</h3>
-                    <ul>
-                        <li><a href="/">Facebook</a></li>
-                        <li><a href="/">Instagram</a></li>
-                        <li><a href="/">X</a></li>
-                    </ul>
-                </div>
-            </section>
+            <img src={logo} alt="Little Lemon Logo" />
+            <div className="footer-content">
+                    <div className="footer-nav">
+                        <p className="footer-head">Site Map</p>
+                        <a href="/" className="footer-item">Home</a>
+                        <a href="/" className="footer-item">About</a>
+                        <a href="/" className="footer-item" >Menu</a>
+                        <a href="/" className="footer-item">Reservations</a>
+                        <a href="/" className="footer-item">Order Online</a>
+                        <a href="/"  className="footer-item">Login</a>
+                    </div>
+                    <div className="footer-contact">
+                        <p className="footer-head">Contact</p>
+                        <a href="/" className="footer-item">Address</a>
+                        <a href="/" className="footer-item">Phone Number</a>
+                        <a href="/" className="footer-item">Email</a>
+                    </div>
+                <div className="footer-social">
+                        <p className="footer-head">Social Media</p>
+                        <a href="/" className="footer-item">Facebook</a>
+                        <a href="/" className="footer-item">Twitter</a>
+                        <a href="/" className="footer-item">Instagram</a>
+                        <a href="/" className="footer-item">YouTube</a>
+                 </div>
+            </div>
         </footer>
-    );
-};
+    )
+}
 
 export default Footer;
