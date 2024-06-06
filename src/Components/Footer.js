@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './footer.module.css'
 import logo from "../Images/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,45 +14,43 @@ import { faEnvelope,
 
 const Footer = () => {
     return(
-        <footer>
+        <footer className={styles.footercontainer}>
             <img src={logo} alt="Little Lemon Logo" />
-            <div className="footer-content">
-                    <div className="footer-nav">
-                        <p className="footer-head">Site Map</p>
-                        <a href="/" className="footer-item">Home</a>
-                        <a href="/" className="footer-item">About</a>
-                        <a href="/" className="footer-item" >Menu</a>
-                        <a href="/" className="footer-item">Reservations</a>
-                        <a href="/" className="footer-item">Order Online</a>
-                        <a href="/"  className="footer-item">Login</a>
+                    <div className={styles.footerNav}>
+                        <p className={styles.footerText}>Site Map</p>
+                         <a href="/" className={styles.footerItem}>Home</a>
+                         <a href="/" className={styles.footerItem}>About</a>
+                         <a href="/" className={styles.footerItem}>Menu</a>
+                         <a href="/" className={styles.footerItem}>Reservations</a>
+                         <a href="/" className={styles.footerItem}>Order Online</a>
+                         <a href="/" className={styles.footerItem}>Login</a>
                     </div>
-                    <div className="footer-contact">
-                        <p className="footer-head">Contact</p>
-                        <a href="/" className="footer-item">
+                    <div className={styles.footerContact}>
+                        <p className={styles.footerHead}>Contact</p>
+                        <a href="/" className={styles.footerItem}>
                         <FontAwesomeIcon icon={faMap}/>Address</a>
-                        <a href="/" className="footer-item">
+                        <a href="/" className={styles.footerItem}>
                         <FontAwesomeIcon icon={faPhone}/>Phone Number</a>
-                        <a href="/" className="footer-item">
+                        <a href="mailto:customer@littlelemon.com" className={styles.footerItem} >
                         <FontAwesomeIcon icon={faEnvelope}/>Email</a>
                     </div>
                 <div className="social-container">
-                        <p className="footer-head">Connect With Us</p>
-                        <a href="https://www.facebook.com" className="facebook social">
-                        <FontAwesomeIcon icon={faFacebook} size="1x" />
+                        <p className={styles.footerHead}>Connect With Us</p>
+                        <a href="https://www.facebook.com" className={`${styles.social} ${styles.facebook}`}>
+                            <FontAwesomeIcon icon={faFacebook} size="1x" />
                         </a>
-                        <a href="https://www.x.com" className="twitter social">
-                        <FontAwesomeIcon icon={faTwitter} size="1x" />
+                        <a href="https://www.x.com" className={`${styles.social} ${styles.instagram}`}>
+                            <FontAwesomeIcon icon={faTwitter} size="1x" />
                         </a>
-                        <a href="https://www.instagram.com" className="instagram social">
-                        <FontAwesomeIcon icon={faInstagram} size="1x" />
+                        <a href="https://www.instagram.com" className={`${styles.social} ${styles.instagram}`}>
+                            <FontAwesomeIcon icon={faInstagram} size="1x" />
                         </a>
-                        <a href="https://www.youtube.com" className="youtube social">
-                        <FontAwesomeIcon icon={faYoutube} size="1x" />
+                        <a href="https://www.youtube.com" className={`${styles.social} ${styles.youtube}`}>
+                            <FontAwesomeIcon icon={faYoutube} size="1x" />
                         </a>
                  </div>
-            </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;
