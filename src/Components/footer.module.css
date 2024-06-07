@@ -1,63 +1,142 @@
-/*Footer Styling*/
-
-footer {
-	font-family: 'Karla', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-    width: 100vw;
-    height: auto;
-    color: white;
-}
+/*--Footer Styling--*/
 
 .footerContainer {
-    display: flex;
-    padding: 20px;
     background-color: #495E57;
-}
+    color: #FFFFFF;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
 
 .footerlogo {
-    padding-top: 2.1rem;
-
-}
+    grid-column: 1;
+    min-width: 6rem;
+    width: 6rem;
+  }
 
 .footerHead {
-    padding-bottom: 13px;
-    padding-left: 30px;
-    font-weight: 600;
-}
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+    margin-bottom: 1rem;
+  }
 
 .footerItem {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px;
-    padding-left: 30px;
-}
+    color: #FFFFFF;
+    transition: color 0.5s;
+  }
 
-.footerItem:hover {
+.footerItem:hover, 
+.footerItem:focus {
     color: #F4CE14;
+  }
+
+.footerNav {
+    grid-column: 2;
+  }
+
+.footerNav ul,
+.footerContact ul,
+.footerSocial ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+.footerNav li,
+.footerContact {
+    margin-bottom: 0.25rem;
+  }
+
+.footerContact {
+    grid-column: 3;
+  }
+
+.footerContact svg {
+    margin-right: 0.5rem;
+  }
+
+.footerContact p {
+    margin-bottom: 0.25rem;
+  }
+
+.footerSocial svg {
+    margin-right: 1rem;
+  }
+
+.footerMedia li {
+    display: inline-block;
+    margin: 0 3px;
 }
 
-.footerNav,
-.footerContact,
-.footerSocial {
-    padding: 20px;
-    margin: 20px;
-}
-
-.social {
+.facebook {
     color: white;
-    padding-left: 30px;
-    margin: 0;
-}
+  }
+.twitter {
+    color: white;
+  }
+.instagram {
+    color: white;
+  }
+.youtube {
+    color: white;
+  }
 
-.social:hover{
+.footerSocial svg:hover {
     color: #F4CE14;
-}
+  }
 
-/*Media Queries*/
+  /*-- Media queries --*/
 
+  @media (max-width: 927px) {
+    .footerContainer {
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: auto auto;
+    }
 
+    .footerSocial {
+      grid-column: 1;
+      grid-row: 2;
+      margin-top: 2rem;
+    }
+  }
 
+  @media (max-width: 789px) {
+    .footerContainer {
+      grid-template-columns: auto auto;
+    }
+
+    .footerContact {
+      grid-column: 1;
+      grid-row: 2;
+      margin-top: 2rem;
+    }
+
+    .footerSocial {
+      grid-column: 2;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footerContainer {
+      grid-template-columns: auto;
+    }
+
+    .footerlogo {
+      grid-row: 1;
+    }
+
+    .footerNav {
+      grid-column: 1;
+      grid-row: 2;
+      margin-top: 2rem;
+    }
+
+    .footerContact {
+      grid-row: 3;
+    }
+
+    .footerSocial {
+      grid-column: 1;
+      grid-row: 4;
+    }
+  }

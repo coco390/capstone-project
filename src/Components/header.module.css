@@ -1,0 +1,75 @@
+/*Navigation Styling*/
+.headerContainer {
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.navlogo img {
+    height: 75px;
+  }
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.navContainer {
+    display: flex;
+  }
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+  }
+
+.navItem{
+    text-decoration: none;
+    color: #495E57;
+    font-size: 14px;
+}
+
+.navItem:hover{
+    background-color: #F4CE14;
+}
+
+@media (max-width: 768px) {
+.hamburger {
+      display: block;
+    }
+
+.navContainer {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+.navContainer.open {
+      display: flex;
+    }
+
+.navLinks {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+.navItem {
+      padding: 10px 20px;
+      text-align: center;
+    }
+  }
+
