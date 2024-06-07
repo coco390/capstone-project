@@ -23,6 +23,7 @@ footer {
 .footerHead {
     padding-bottom: 13px;
     padding-left: 30px;
+    font-weight: 600;
 }
 
 .footerItem {
@@ -48,7 +49,8 @@ footer {
 
 .social {
     color: white;
-    padding: 5px;
+    padding-left: 30px;
+    margin: 0;
 }
 
 .social:hover{
@@ -56,4 +58,6 @@ footer {
 }
 
 /*Media Queries*/
+
+
 
