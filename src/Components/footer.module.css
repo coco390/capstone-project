@@ -1,46 +1,59 @@
 /*Footer Styling*/
-/* footer.module.css */
+
+footer {
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    width: 100vw;
+    height: auto;
+    color: white;
+}
+
 .footerContainer {
-    background-color: #f8f9fa;
+    display: flex;
     padding: 20px;
-    border-top: 1px solid #e7e7e7;
-    text-align: center;
+    background-color: #495E57;
+}
+
+.footerlogo {
+    padding-top: 2.1rem;
+
+}
+
+.footerHead {
+    padding-bottom: 13px;
+    padding-left: 30px;
+}
+
+.footerItem {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.footerItem:hover {
+    color: #F4CE14;
 }
 
 .footerNav,
 .footerContact,
-.socialContainer {
-    margin: 20px 0;
+.footerSocial {
+    padding: 20px;
+    margin: 20px;
 }
 
-.footerText,
-.footerHead {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #333;
+.social {
+    color: white;
+    padding: 5px;
 }
 
-.footerItem {
-    color: #007bff;
-    text-decoration: none;
-    margin: 5px 0;
-    display: block;
+.social:hover{
+    color: #F4CE14;
 }
 
-.footerItem:hover {
-    text-decoration: underline;
-}
+/*Media Queries*/
 
-.footerItem svg {
-    margin-right: 8px;
-}
-
-.socialContainer a {
-    margin: 0 10px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.socialContainer a:hover {
-    color: #0056b3;
-}
