@@ -1,36 +1,49 @@
 /*Hero Component Styling*/
 
 .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     background-color: #495E57;
     padding-top: 1.875rem;
   }
 
 .container {
-    grid-template-columns: 1fr 1fr;
-    gap: 3.5rem;
-    margin-bottom: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem; 
   }
 
 .information {
-    grid-column: 1;
+  margin-bottom: 2rem;
   }
 
 h1{
     color: #F4CE14;
+    margin: 0; 
 }
 
 h2 {
     color: white;
+    margin: 0.5rem 0; 
 }
 
 p {
   margin-top: 1.5rem;
   color: #FFFFFF;
+  line-height: 1.5; 
 }
 
 .button{
   display: inline-block;
   margin-top: 2rem;
+  padding: 0.75rem 1.5rem; 
+  background-color: #F4CE14;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .button:hover,
@@ -39,11 +52,12 @@ p {
 }
 
 .heroimg {
+  border-radius: 3rem;
   grid-column: 2;
-  width: 100%;
   height: 24rem;
-  margin-bottom: -4.375rem;
   justify-self: end;
-  border-radius: 1rem;
+  margin-bottom: -4.375rem;
   object-fit: cover;
+  width: 100%;
+  padding: 2rem;
 }

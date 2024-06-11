@@ -20,9 +20,10 @@ const Main = () => {
                      Reserve a table
                     </Link>
                 </div>
-                <img className={styles.heroimg} src={restaurantfood} alt="Restaurant Food" />
             </div>
+            <img className={styles.heroimg} src={restaurantfood} alt="Restaurant Food" />
         </section>
+        
 
     );
 }
