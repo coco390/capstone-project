@@ -18,7 +18,7 @@ const Footer = () => {
             <div className={styles.footerlogo}>
                 <img src={logo} alt="Little Lemon Logo" />
             </div>
-            <div className={styles.footerNav}>
+            <nav className={styles.footerNav}>
                 <p className={styles.footerHead}>Site Map</p>
                 <ul className={styles.footerList}>
                     <li><a href="/" className={styles.footerItem}>Home</a></li>
@@ -28,15 +28,15 @@ const Footer = () => {
                     <li><a href="/order-online" className={styles.footerItem}>Order Online</a></li>
                     <li><a href="/login" className={styles.footerItem}>Login</a></li>
                 </ul>
-            </div>
-            <div className={styles.footerContact}>
+            </nav>
+            <address iv className={styles.footerContact}>
                 <p className={styles.footerHead}>Contact Us</p>
                 <ul className={styles.footerList}>
                     <li><a href="/" className={styles.footerItem}><FontAwesomeIcon icon={faMapMarkerAlt} />123 Lemon, Chicago, IL 60611</a></li>
                     <li><a href="/" className={styles.footerItem}><FontAwesomeIcon icon={faPhone} /> (888)123-4567</a></li>
                     <li><a href="mailto:customer@littlelemon.com" className={styles.footerItem}><FontAwesomeIcon icon={faEnvelope} /> customer@littlelemon.com</a></li>
                 </ul>
-            </div>
+            </address>
             <div className={styles.footerSocial}>
                 <p className={styles.footerHead}>Connect With Us</p>
                 <ul className={styles.footerMedia}>
