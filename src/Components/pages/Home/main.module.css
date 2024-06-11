@@ -4,7 +4,7 @@
     background-color: #495E57;
     padding-top: 1.875rem;
   }
-  
+
 .container {
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem;
@@ -26,6 +26,16 @@ h2 {
 p {
   margin-top: 1.5rem;
   color: #FFFFFF;
+}
+
+.button{
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.button:hover,
+.button:focus {
+  border-color: #F4CE14;
 }
 
 .heroimg {

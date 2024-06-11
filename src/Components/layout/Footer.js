@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css"
-import logo from "../Images/logowhite.PNG";
+import logo from "../layout/logowhite.PNG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,
