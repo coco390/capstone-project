@@ -23,8 +23,6 @@ const Main = () => {
             </div>
             <img className={styles.heroimg} src={restaurantfood} alt="Restaurant Food" />
         </section>
-        
-
     );
 }
 

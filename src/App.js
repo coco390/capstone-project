@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import pages from "./Components/utilities/pages";
 import Layout from "./Components/layout/Layout";
-import Home from "./Components/pages/Home/Main";
+import Home from "./Components/pages/Home";
 import Bookings from "./Components/pages/Bookings";
 import ConfirmedBooking from "./Components/pages/Bookings/ConfirmedBooking";
 import NotFound from "./Components/pages/NotFound";

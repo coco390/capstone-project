@@ -1,0 +1,49 @@
+/*Weely Specials Styling*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto;
+    gap: 1.24rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    max-width: 61.625rem;
+    width: 90%;
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 1.875rem;
+}
+
+.header h2 {
+    color: #495e57;
+    line-height: 1;
+    font-family: "Markazi Text", serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+}
+
+.button {
+    background-color: #f4ce14;
+    border: .1875rem solid #f4ce14;
+    border-radius: 2rem;
+    color: #495e57;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    transition: background, border, color .5s;
+}
+
+.button:hover,
+.button:focus {
+  border: #495e57;
+  background-color: #495e57;
+  color: white;
+}
+
+/*Media Queries*/

@@ -1,8 +1,8 @@
 /*Navigation Styling*/
 .headerContainer {
-	font-family: 'Karla', sans-serif;
-	font-size: 20px;
-	font-weight: 500;
+	  font-family: 'Karla', sans-serif;
+	  font-size: 20px;
+	  font-weight: 500;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -41,35 +41,43 @@
     background-color: #F4CE14;
 }
 
-@media (max-width: 768px) {
-.hamburger {
-      display: block;
-    }
+/*Media Queries*/
+@media (max-width: 926px) {
+  .navlogo img {
+      height: 50px;
+  }
 
-.navContainer {
+  .hamburger {
+      display: block;
+      margin-right: 20px;
+  }
+
+  .navContainer {
       display: none;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 75px;
       left: 0;
       background-color: #fff;
       border-top: 1px solid #ddd;
-    }
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  }
 
-.navContainer.open {
+  .navContainer.open {
       display: flex;
-    }
+  }
 
-.navLinks {
+  .navLinks {
       flex-direction: column;
       gap: 10px;
       padding: 10px 0;
-    }
+  }
 
-.navItem {
+  .navItem {
       padding: 10px 20px;
       text-align: center;
-    }
   }
+}
 
