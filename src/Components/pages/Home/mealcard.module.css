@@ -1,67 +1,68 @@
 /*Meal Card Styling*/
 .card {
-    min-height: 31.25rem;
-    padding-bottom: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    overflow: hidden;
-    background-color: #EDEFEE;
-  }
+  background-color: #edefee;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  grid-row: 2;
+  min-height: 31.25rem;
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+}
 
-  .card:hover .mealimg img {
-    transform: scale(1.1);
-  }
+.card:hover .mealimg img {
+  transform: scale(1.1);
+}
 
-  .mealimg img {
-    width: 100%;
-    height: 12.5rem;
-    object-fit: cover;
-    margin-bottom: 0.9375rem;
-    transition: all ease-in-out 0.3s;
-  }
+.mealimg img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+  margin-bottom: 0.9375rem;
+  transition: all ease-in-out 0.3s;
+}
 
-  .mealheader,
-  .mealfooter {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+.mealheader,
+.mealfooter {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 
-  .mealheader {
-    display: flex;
-    gap: 1.25rem;
-    justify-content: space-between;
-    margin-bottom: 1.875rem;
-  }
+.mealheader {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
 
-  .mealheader h3 {
-    font-size: 1.15rem;
-  }
+.mealheader h3 {
+  font-size: 1.15rem;
+}
 
-  .mealheader span {
-    font-weight: bold;
-    color: #EE9972;
-  }
+.mealheader span {
+  font-weight: bold;
+  color: #ee9972;
+}
 
-  .mealfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
+.mealfooter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
 
-  .mealfooter a {
-    font-weight: bold;
-  }
+.mealfooter a {
+  font-weight: bold;
+}
 
-  .mealfooter svg {
-    margin-left: 0.5rem;
-  }
+.mealfooter svg {
+  margin-left: 0.5rem;
+}
 
-  /*Media queries*/
-
-  @media screen and (max-width: 768px) {
+/*Media Query*/
+@media screen and (max-width: 960px) {
   .card {
     grid-row: auto;
   }
-  }
+}
