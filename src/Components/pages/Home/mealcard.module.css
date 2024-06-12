@@ -1,7 +1,5 @@
 /*Meal Card Styling*/
 .card {
-    grid-column: auto;
-    grid-row: 2;
     min-height: 31.25rem;
     padding-bottom: 2.5rem;
     display: flex;
@@ -62,8 +60,8 @@
 
   /*Media queries*/
 
-  @media (max-width: 960px) {
-  .meal-card {
+  @media screen and (max-width: 768px) {
+  .card {
     grid-row: auto;
   }
   }
