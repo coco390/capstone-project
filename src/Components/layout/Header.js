@@ -1,34 +1,50 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; 
+import { useLocation, Link } from 'react-router-dom';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from "./header.module.css"
 import logo from "../layout/logolarge.PNG"
+import pages from "../utilities/pages"
+
+const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
+
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   return (
-    <header className={styles.headerContainer}>
-        <div className={styles.navlogo}>
-          <img src={logo} alt="Logo" />
-        </div>
-        <button className={styles.hamburger} onClick={toggleMenu}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </button>
-        <nav className={`${styles.navContainer} ${isOpen ? styles.open : ''}`}>
-        <div className={styles.navLinks}>
-          <a href="/" className={styles.navItem}>Home</a>
-          <a href="/about" className={styles.navItem}>About</a>
-          <a href="/menu" className={styles.navItem}>Menu</a>
-          <a href="/reservations" className={styles.navItem}>Reservations</a>
-          <a href="/order-online" className={styles.navItem}>Online Orders</a>
-          <a href="/login" className={styles.navItem}>Login</a>
-        </div>
+    <header>
+      <nav className={styles.container}>
+        <Link className={styles.navlogo} to={pages.get('home').path}>
+          <img src={logo} alt="Little Lemon logo" />
+        </Link>
+        <button
+          className={styles.hamburger}
+          type="button"
+          onClick={() => setIsNavExpanded(!isNavExpanded)}
+        >
+          {isNavExpanded ?
+            <FontAwesomeIcon icon={faXmark} size="2x" /> :
+            <FontAwesomeIcon icon={faBars} size="2x" />}
+        </button>
+        <ul
+          className={isNavExpanded ? styles.navBarLinksExpanded : styles.navBarLinks}
+          onClick={() => setIsNavExpanded(!isNavExpanded)}
+        >
+          {navLinks.map((navLink, index) =>
+            <li key={index}>
+              <Link
+                className={pathname === navLink.path ? styles.current : ''}
+                to={navLink.path}
+              >
+                {navLink.name}
+              </Link>
+            </li>
+          )}
+        </ul>
       </nav>
     </header>
   );
-}
-
+};
 export default Header;
