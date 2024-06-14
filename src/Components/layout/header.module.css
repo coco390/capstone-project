@@ -32,10 +32,6 @@
     transition: background-color .5s;
 }
 
-.navBarLinksExpanded {
-    left: 0;
-}
-
 .navBarLinks {
     display: flex;
     grid-column: 3;
@@ -45,6 +41,7 @@
     margin-block-start: 0;
     padding-inline-start: 0;
     transition: left .3s;
+    left: 0;
   }
 
 .navBarLinks a {
@@ -61,11 +58,11 @@
     position: absolute;
     top: 100%;
     left: 0;
-     width: 100%;
+    width: 100%;
     background-color: #fff;
-     z-index: 1000;
-     list-style-type: none;
-     padding: 0;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
 }
 
 .navBarLinks li {
@@ -96,17 +93,15 @@
 
     .navBarLinks {
         position: absolute;
-        flex-direction: column;
         width: 50%;
         height: 100vh;
-         top: 0;
-        left: -50%;
+        top: 0;
         background-color: #FFFFFF;
         box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
         z-index: 100;
     }
 
-    .navBarLinks li {
+    .navBarLinks, .navBarLinks li {
         flex-direction: column;
     }
 }
