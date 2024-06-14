@@ -25,8 +25,8 @@ const Header = () => {
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         >
           {isNavExpanded ?
-            <FontAwesomeIcon icon={faXmark} size="2x" /> :
-            <FontAwesomeIcon icon={faBars} size="2x" />}
+            <FontAwesomeIcon icon={faBars} size="2x" /> :
+            <FontAwesomeIcon icon={faXmark} size="2x" />}
         </button>
         <ul
           className={isNavExpanded ? styles.navBarLinksExpanded : styles.navBarLinks}
