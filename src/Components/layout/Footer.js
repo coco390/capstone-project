@@ -31,16 +31,17 @@ const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
 
 const Footer = () => {
     return (
-        <footer className={styles.footerContainer}>
-            <div className={styles.grid}>
-                <img className={styles.footerLogo}src={logo} alt="Little Lemon Logo" />
-            </div>
+        <footer className={styles.siteFooter}>
+            <div className={styles.footerContainer}>
+                <img className={styles.footerLogo}
+                src={logo} 
+                alt="Little Lemon Logo" />
             <nav className={styles.footerNav}>
                 <h4>Site Map</h4>
                 <ul>
                     {navLinks.map((navLink, index) =>
                         <li key={index}>
-                         <Link to={navLink.path}>{navLink.name}</Link>
+                            <Link to={navLink.path}>{navLink.name}</Link>
                          </li>
                     )}
                 </ul>
@@ -48,15 +49,18 @@ const Footer = () => {
             <div className={styles.footerContact}>
                 <h4>Contact Us</h4>
                     <address>
+                    <ul>
                     {contacts.map((contact, index) =>
-                        <p key={index}>
+                        <li key={index}>
                          <FontAwesomeIcon icon={contact.icon} /> {contact.info}
-                        </p>
+                        </li>
                     )}
+                    </ul>
                     </address>
+            </div>
 
-                <div className={styles.footerSocial}>
-                    <h4>Connect With Us</h4>
+            <div className={styles.footerSocial}>
+                <h4>Connect With Us</h4>
                     {socials.map((social, index) =>
                     <a
                         key={index}
