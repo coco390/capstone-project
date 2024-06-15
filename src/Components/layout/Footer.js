@@ -33,7 +33,7 @@ const Footer = () => {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.grid}>
-                <img className={styles.footerimg}src={logo} alt="Little Lemon Logo" />
+                <img className={styles.footerLogo}src={logo} alt="Little Lemon Logo" />
             </div>
             <nav className={styles.footerNav}>
                 <h4>Site Map</h4>
@@ -47,7 +47,6 @@ const Footer = () => {
             </nav>
             <div className={styles.footerContact}>
                 <h4>Contact Us</h4>
-                <ul className={styles.footerList}>
                     <address>
                     {contacts.map((contact, index) =>
                         <p key={index}>
@@ -55,7 +54,6 @@ const Footer = () => {
                         </p>
                     )}
                     </address>
-                </ul>
 
                 <div className={styles.footerSocial}>
                     <h4>Connect With Us</h4>
