@@ -24,12 +24,11 @@
 grid-column: 1;
 }
 
-
-h1 {
+.information h1 {
   color: #F4CE14;
 }
 
-h2 {
+.information h2 {
   color: white;
 }
 

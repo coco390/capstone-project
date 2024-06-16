@@ -1,8 +1,11 @@
-.notfound {
+/*Under Construction Styling*/
+
+.under-construction {
     display: flex;
     flex-direction: column;
+    color: #495E57;
     gap: 1rem;
     min-height: 31.25rem;
     padding: 1.875rem 0 1.875rem 0;
     text-align: center;
-}
+  }

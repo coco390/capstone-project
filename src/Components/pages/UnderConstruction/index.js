@@ -1,11 +1,10 @@
-import React from 'react';
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from "./index.module.css";
+import "./index.css";
 
 const UnderConstruction = () => {
   return (
-    <div className={styles.container}>
+    <div className="under-construction">
       <FontAwesomeIcon icon={faPersonDigging} size="3x" />
       <h2>Page under construction</h2>
     </div>

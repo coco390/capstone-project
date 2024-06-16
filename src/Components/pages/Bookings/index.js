@@ -1,7 +1,7 @@
 import React from "react";
 import { useReducer } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./bookings.module.css";
+import "./index.css";
 import { fetchAPI, submitAPI } from "../../utilities/fakeAPI";
 import pages from "../../utilities/pages";
 import BookingForm from "./BookingForm";
@@ -27,7 +27,7 @@ const updateTimes = (availableTimes, date) => {
     };
 
     return (
-      <div className={styles.bookings}>
+      <div className="bookings">
         <h2>Table reservation</h2>
         <BookingForm
           availableTimes={availableTimes}
