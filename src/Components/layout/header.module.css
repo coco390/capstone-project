@@ -1,4 +1,11 @@
 /*Navigation Styling*/
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: none;
+}
 .container {
     display: grid;
     grid-template-columns: auto auto auto;

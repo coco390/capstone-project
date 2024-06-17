@@ -14,7 +14,7 @@ const Header = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.container}>
         <Link className={styles.navlogo} to={pages.get('home').path}>
           <img src={logo} alt="Little Lemon logo" />
