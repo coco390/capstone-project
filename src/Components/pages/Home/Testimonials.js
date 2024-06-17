@@ -17,7 +17,7 @@ const customer = [
         fullName: "Josh Williams",
         image: customer2Image,
         rating: [1,1,1,1,0.5],
-        says:  `The Greek Salad was delightful and refreshful.`,
+        says:  `The Greek Salad was delightful and refreshing.`,
     },
 
     {
