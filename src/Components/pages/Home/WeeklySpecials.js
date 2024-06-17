@@ -37,12 +37,12 @@ const WeekSpecials = () => {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <h2>This week specials!</h2>
+        <h2>This week's specials!</h2>
         <Link className={styles.button} to={pages.get('orderOnline').path}>
           Online Menu
         </Link>
       </div>
-      {meals.map((meal, index) => 
+      {meals.map((meal, index) =>
         <MealCard key={index} meal={meal} />
       )}
     </section>
