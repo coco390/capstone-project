@@ -40,6 +40,7 @@
   font-size: 1.15rem;
 }
 
+
 .mealheader span {
   font-weight: bold;
   color: #ee9972;
@@ -54,6 +55,10 @@
 
 .mealfooter a {
   font-weight: bold;
+}
+
+.mealfooter p {
+  color: #495E57;
 }
 
 .mealfooter svg {
